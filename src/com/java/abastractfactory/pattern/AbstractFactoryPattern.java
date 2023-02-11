@@ -16,15 +16,14 @@ public class AbstractFactoryPattern {
         String vehicleName = br.readLine();
 
         System.out.println("\n"+"Enter the Size of Vehicle: ");
-
-        String size = br.readLine();
+        String requestedSize = br.readLine();
 
         AbstractFactory sizeFactory = FactoryCreator.getFactory("Size");
-        Size size1 = sizeFactory.getSize(size);
+        Size size = sizeFactory.getSize(requestedSize);
 
         AbstractFactory vehicleFactory = FactoryCreator.getFactory("Vehicle");
         Vehicle  vehicle = vehicleFactory.getVehicle(vehicleName);
 
-        System.out.println("The Vehicle is : "+vehicle.toString()+" "+ "The Size is :"+ size1.toString());
+        System.out.println("The Asked Vehicle is : "+vehicle.toString()+" "+ "The Asked Size is :"+ size.toString());
     }
 }

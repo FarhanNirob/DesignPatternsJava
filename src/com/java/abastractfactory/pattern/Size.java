@@ -5,9 +5,9 @@ package com.java.abastractfactory.pattern;
  */
 public abstract class Size {
     protected String vehicleSize;
-//    abstract void getSize(String vehicleSize);
-    public void getAskedSize(String vehicleSize){
 
-        System.out.println("Your Car Size is: "+vehicleSize);
+    public void getAskedSize(String vehicleSize){
+        System.out.println("Asked Size is "+vehicleSize);
     }
+
 }
