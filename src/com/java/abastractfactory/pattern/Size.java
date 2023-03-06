@@ -7,7 +7,7 @@ public abstract class Size {
     protected String vehicleSize;
 
     public void getAskedSize(String vehicleSize){
-        System.out.println("Asked Size is "+vehicleSize);
+        System.out.println("Asked Size is "+vehicleSize );
     }
 
 }
